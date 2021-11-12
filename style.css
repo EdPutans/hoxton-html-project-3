@@ -131,6 +131,10 @@ section {
     background-image: url("/assests/images/lezha-2.jpg");
 }
 
+.gjirokaster-hero {
+    background-image: url("/assests/images/gjirokaster-2.jpg");
+}
+
 .black-text h1,
 .black-text h2,
 .black-text h3,
@@ -283,6 +287,14 @@ section {
     background-image: url("/assests/images/lezha-3.jpg");
 }
 
+.gjirokaster1 {
+    background-image: url("/assests/images/gjirokaster-1.jpg");
+}
+
+.gjirokaster2 {
+    background-image: url("/assests/images/gjirokaster-2.jpg");
+}
+
 .single .img-container img {
     width: 200%;
     height: 200%;
@@ -317,8 +329,8 @@ section {
     transform: scale(2);
 }
 
-#shkoder-area:hover {
-    fill: #0f0f0f;
+path:hover {
+    fill: #727272;
 }
 
 footer {
