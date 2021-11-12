@@ -1,114 +1,181 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	font-family: sans-serif;
-	color: #e0e0e0;
-	background-color: #0f0f0f;
-
-}
-p{
-	font-size: 1.2rem;
-	margin-bottom: 1.2rem;
+body {
+    font-family: sans-serif;
+    color: #e0e0e0;
+    background-color: #0f0f0f;
 }
 
-h1{
-	font-size: 5rem;
-	padding: 1rem 2rem;
-	margin-bottom: 5rem;
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
 }
-h2{
-	font-size: 4rem;
-	margin-bottom: 4rem;
+
+h1 {
+    font-size: 5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
 }
-h3{
-	font-size: 3rem;
-	margin-bottom: 3rem;
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
-h4{
-	font-size: 2rem;
-	margin-bottom: 2rem;
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
 }
-header{
-	position: sticky;
-	top: 0;
-	height: 80px;
-	background: rgb(0,0,0);
-	box-shadow: 0px 0px 20px 10px #000;
-	z-index: 1;
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
-main{
-	height: 100vh;
-	margin-top: -80px;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+
+header {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: #0f0f0f;
+    box-shadow: 0px 0px 20px 10px #0f0f0f;
+    z-index: 1;
 }
+
+main {
+    height: 100vh;
+    margin-top: -80px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+
 /* Width */
+
 main::-webkit-scrollbar {
-	width: 3px;
+    width: 3px;
 }
+
+
 /* Track */
+
 ::-webkit-scrollbar-track {
-	background: transparent;
+    background: transparent;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-	background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
 }
 
-
-
-section{
-	height: 100vh;
-	background-color: #00000008;
-	background-blend-mode: overlay;
-	scroll-snap-align: start;
-
+section {
+    height: 100vh;
+    background-blend-mode: overlay;
+    scroll-snap-align: start;
 }
-.container{
-	width: 100%;
-	height: 100%;
-	backdrop-filter: blur(8px);
-	display: grid;
-	place-items: center;
-	text-align: center;
+
+.container {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
-.hero{
-	background-image: url('/assests/images/Kruja-Castle.jpg');
-	background-size: cover;
-	background-repeat: none;
+
+.hero {
+    background-image: url('/assests/images/Kruja-Castle.jpg');
+    background-size: cover;
+    background-repeat: none;
 }
+
 .hero h1,
-.hero h3{
-	color: #000;
-}
-.text-back-blur{
-	backdrop-filter: blur(2px);
-	border-radius: 50px;
-	box-shadow: inset 0px 0px 10px 10px transparent;
+.hero h3 {
+    color: #000;
 }
 
-.popular-cards{
-	display: grid;
-	grid-template-columns: repeat(3, 40ch);
-	gap: 3rem;
-	filter: none;
-}
-.card img{
-width: 100%;}
-.card p{
-	width: 35ch;
-}
-.about{
-	background-image: url("/assests/images/albania.jpg");
-	background-size: cover;
-	background-repeat: none;
+.text-back-blur {
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px 10px transparent;
 }
 
-.about p{
-	width: 70ch;
+.popular-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 40ch);
+    gap: 3rem;
+    filter: none;
+}
+
+.img-container img {
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.img-container {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.img-container:hover img {
+    transform: scale(1.2);
+}
+
+.card p {
+    width: 35ch;
+}
+
+.about {
+    background-image: url("/assests/images/albania.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.about p {
+    width: 70ch;
+}
+
+.places section {
+    padding: 6rem 0;
+    background-blend-mode: overlay;
+    scroll-snap-align: start;
+}
+
+.places .hero {
+    height: 100vh;
+    padding: 0;
+}
+
+.places .container {
+    padding: 0 4rem;
+}
+
+.places .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.places .reverse .img-container {
+    order: 1;
+}
+
+.places .img-container img {
+    width: 100%;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+}
+
+.text p {
+    width: 40ch;
+    line-height: 1.3;
 }
