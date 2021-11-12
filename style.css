@@ -123,6 +123,14 @@ section {
     background-repeat: none;
 }
 
+.rozafa-hero {
+    background-image: url("/assests/images/rozafa-4.jpg");
+}
+
+.lezha-hero {
+    background-image: url("/assests/images/lezha-2.jpg");
+}
+
 .black-text h1,
 .black-text h2,
 .black-text h3,
@@ -162,6 +170,7 @@ section {
 
 .card p {
     width: 35ch;
+    margin: auto;
 }
 
 .about {
@@ -172,6 +181,7 @@ section {
 
 .about p {
     width: 70ch;
+    margin: auto;
 }
 
 .places section {
@@ -213,8 +223,12 @@ section {
     text-decoration: none;
 }
 
+.text a:hover {
+    text-decoration: underline;
+}
+
 .text p {
-    width: 40ch;
+    width: 50ch;
     line-height: 1.3;
 }
 
@@ -245,6 +259,30 @@ section {
     background-image: url("/assests/images/Kruja-Castle.jpg");
 }
 
+.rozafa1 {
+    background-image: url("/assests/images/rozafa-1.jfif");
+}
+
+.rozafa2 {
+    background-image: url("/assests/images/rozafa-2.jfif");
+}
+
+.rozafa3 {
+    background-image: url("/assests/images/rozafa-3.jfif");
+}
+
+.rozafa4 {
+    background-image: url("/assests/images/rozafa-4.jpg");
+}
+
+.lezha1 {
+    background-image: url("/assests/images/lezha-1.jpg");
+}
+
+.lezha2 {
+    background-image: url("/assests/images/lezha-3.jpg");
+}
+
 .single .img-container img {
     width: 200%;
     height: 200%;
@@ -266,4 +304,59 @@ section {
 
 .single .reverse .img-container {
     order: 1;
+}
+
+@media screen and (max-width:1200px) {
+    p {
+        font-size: 0.9rem;
+    }
+    a {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        padding: 1rem 2rem;
+        margin-bottom: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    section.most-popular {
+        height: auto;
+        text-align: center;
+    }
+    .popular-cards {
+        grid-template-columns: auto;
+    }
+    .about p {
+        width: 35ch;
+    }
+    .places .container {
+        padding: 0 1rem;
+    }
+    .places .container .content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .img-container {
+        order: 1;
+    }
+    .text-container {
+        margin: 3rem 0;
+    }
+    .text p {
+        width: 40ch;
+    }
+    .single .content {
+        grid-template-columns: auto;
+    }
 }
