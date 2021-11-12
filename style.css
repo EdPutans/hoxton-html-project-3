@@ -177,6 +177,28 @@ section {
     margin: auto;
 }
 
+.card button {
+    padding: 0.4rem 2rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: #0f0f0f;
+}
+
+.card button:hover a {
+    color: #e0e0e0;
+}
+
+.card a {
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .about {
     background-image: url("/assests/images/albania.jpg");
     background-size: cover;
